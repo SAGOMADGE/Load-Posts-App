@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+#postsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.15);
+
+  transition: all 400ms ease;
+}
+
+.post:hover {
+  transform: scale(1.01) translateY(-4px);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.post h3 {
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.post p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+#emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #555;
+}
+
+#emptyState h2 {
+  margin-bottom: 8px;
+}
+
+#emptyState p {
+  max-width: 320px;
+}
+
+#btnArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 2px solid #fff;
+
+  background-color: #bb541c;
+  color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+}
+
+button:hover {
+  background-color: #e16421;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #0f3381;
+  text-align: center;
+  padding: 15px 0;
+}
